@@ -1,5 +1,8 @@
 import { AppContainer } from "./AppContainer";
+import { Button } from './Button'
+
 
 export {
-    AppContainer
+    AppContainer,
+    Button
 }
