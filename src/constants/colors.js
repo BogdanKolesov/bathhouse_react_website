@@ -1,0 +1,15 @@
+//COLORS
+
+const COLOR_WHITE = '#FFFFFF'
+const COLOR_GRAY = '#4B4B4B'
+const COLOR_DARK = '#1E1E1E'
+const COLOR_GREEN = '#70873A'
+const COLOR_ORANGE = '#DF9830'
+
+export {
+    COLOR_DARK,
+    COLOR_GRAY,
+    COLOR_GREEN,
+    COLOR_ORANGE,
+    COLOR_WHITE
+}
