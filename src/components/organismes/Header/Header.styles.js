@@ -6,7 +6,8 @@ export const HeaderContainer = styled.header`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 28px;
+    padding-top: 28px;
+    height: 86px;
 `
 export const HeaderLogo = styled.div`
     display: flex;
@@ -31,3 +32,4 @@ export const HeaderInfo = styled.div`
 export const HeaderPhone = styled.div`
 
 `
+
