@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-import { AppContainer } from "./components/atoms";
 import Hero from "./components/organismes/Hero/Hero";
 import { GlobalTheme } from "./themes/GlobalTheme";
 import { GreenTheme } from "./themes/GreenTheme";
