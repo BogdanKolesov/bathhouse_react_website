@@ -4,6 +4,7 @@ import { GlobalTheme } from "./themes/GlobalTheme";
 import { GreenTheme } from "./themes/GreenTheme";
 
 function App() {
+  //fix: router
   return (
     <ThemeProvider theme={GreenTheme}>
       <GlobalTheme />
