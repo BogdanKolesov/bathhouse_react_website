@@ -1,7 +1,7 @@
 import React from 'react';
-import { AppContainer, Button } from '../../atoms'
+import { AppContainer } from '../../atoms'
 import { headerData } from '../../../data/headerData'
-import { HeaderContainer, HeaderInfo, HeaderLink, HeaderLinks, HeaderLogo, HeaderPhone } from './Header.styles';
+import { HeaderContainer, HeaderInfo, HeaderLink, HeaderLinks, HeaderLogo, HeaderPhone, HeaderButton } from './Header.styles';
 import { ICON_LOGO } from '../../../constants/icons';
 
 const Header = () => {
@@ -10,6 +10,10 @@ const Header = () => {
             <HeaderContainer>
                 <HeaderLogo>
                     <img src={ICON_LOGO} alt='Баня' />
+                    <p>
+                        <span>Баня "Берёзка"</span>
+                        <span>в Санкт-Петербурге</span>
+                    </p>
                 </HeaderLogo>
                 <HeaderLinks>
                     {
@@ -24,9 +28,9 @@ const Header = () => {
                     <HeaderPhone>
 
                     </HeaderPhone>
-                    <Button>
+                    <HeaderButton>
                         Забронировать
-                    </Button>
+                    </HeaderButton>
                 </HeaderInfo>
             </HeaderContainer>
         </AppContainer>

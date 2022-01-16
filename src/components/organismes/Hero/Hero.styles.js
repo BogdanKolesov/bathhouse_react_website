@@ -1,20 +1,32 @@
 import styled from 'styled-components';
-import { COLOR_WHITE } from '../../../constants/colors';
-import { AppContainer } from '../../atoms';
+import { AppContainer, Button, SocialIcon } from '../../atoms';
 
 export const HeroContainer = styled.section`
     width: 100%;
     position: relative;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 export const HeroSubtitle = styled.span`
-    color: ${COLOR_WHITE};
     font-size: 20px;
     margin-bottom: 29px;
     img{
         margin-right: 17.5px;
     }
+`
+export const HeroTime = styled.p`
+    margin-top: 29px;
+`
+
+export const HeroPrice = styled.p`
+    margin-top: 15px;
+`
+export const HeroContent = styled(AppContainer)`
+    display: flex;
+    justify-content: space-between;
 `
 
 export const HeroBackground = styled.img`
@@ -28,19 +40,31 @@ export const HeroBackground = styled.img`
 `
 export const HeroText = styled.div`    
     h1{
-        color: ${COLOR_WHITE};
         font-size: 70px;
         display: flex;
         flex-direction: column;
     }
     p{
         font-size: 22px;
-        color: ${COLOR_WHITE};
-        &:nth-child(1){
-            margin-top: 29px;
-        }
+    }
+    ${Button}{
+        margin-top: 30px;
     }
 `
-export const TextContainer = styled(AppContainer)`
-    margin-top: 86px;
+export const TextContainer = styled.div`
+    width: 100%;
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+`
+
+export const HeroSocial = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    ${SocialIcon}{
+        margin-bottom: 30px;
+    }
 `

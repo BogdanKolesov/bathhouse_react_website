@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { COLOR_ORANGE } from '../../../constants/colors';
+import { Button } from '../../atoms';
 
 export const HeaderContainer = styled.header`
     display: flex;
@@ -12,6 +14,22 @@ export const HeaderContainer = styled.header`
 export const HeaderLogo = styled.div`
     display: flex;
     align-items: flex-end;
+    img{
+        height: 100%;
+    }
+    p{
+        display: flex;
+        flex-direction: column;
+        margin-left: 17px;
+        height: 100%;
+        span{
+            font-size: 25px;
+            font-weight: 400;
+        }
+        span:last-child{
+            font-size: 18px;
+        }
+    }
 
 `
 export const HeaderLinks = styled.div`
@@ -32,4 +50,7 @@ export const HeaderInfo = styled.div`
 export const HeaderPhone = styled.div`
 
 `
-
+export const HeaderButton = styled(Button)`
+    background-color: ${COLOR_ORANGE};
+    border-color: ${COLOR_ORANGE};
+`
