@@ -1,7 +1,6 @@
 import React from 'react';
 import { ICON_MAPPOINT } from '../../../constants/icons';
-import { AppContainer } from '../../atoms';
-import { HeroBackground, HeroContainer, HeroText } from './Hero.styles';
+import { TextContainer, HeroBackground, HeroContainer, HeroSubtitle, HeroText } from './Hero.styles';
 import Header from "../Header";
 
 
@@ -10,21 +9,19 @@ const Hero = () => {
         <HeroContainer>
             <Header />
             <HeroBackground src='/assets/images/Hero/heroBackground.png' alt='' />
-            <AppContainer>
-
+            <TextContainer>
                 <HeroText>
                     <h1>
-                        Баня "Берёзка" в Санкт-Петербурге
+                        <span>Баня "Берёзка"</span><span> в Санкт-Петербурге</span>
                     </h1>
-                    <span>
+                    <HeroSubtitle>
                         <img src={ICON_MAPPOINT} alt='' />
-                        г.Санкт-Петербург, ул.Боровая, д.8
-                    </span>
+                        г. Санкт-Петербург, ул.Боровая, д.8
+                    </HeroSubtitle>
                     <p>Работаем <bold>круглосуточно</bold></p>
                     <p>Цены <bold>от 1100 рублей</bold></p>
-
                 </HeroText >
-            </AppContainer >
+            </TextContainer >
         </HeroContainer >
     );
 }

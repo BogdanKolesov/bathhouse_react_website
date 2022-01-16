@@ -1,6 +1,6 @@
 //COLORS
 
-const COLOR_WHITE = '#FFFFFF'
+const COLOR_WHITE = '#fff'
 const COLOR_GRAY = '#4B4B4B'
 const COLOR_DARK = '#1E1E1E'
 const COLOR_GREEN = '#70873A'

@@ -1,15 +1,27 @@
 import { ThemeProvider } from "styled-components";
-import Hero from "./components/organismes/Hero/Hero";
+import Home from './components/views/Home'
 import { GlobalTheme } from "./themes/GlobalTheme";
 import { GreenTheme } from "./themes/GreenTheme";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   //fix: router
   return (
-    <ThemeProvider theme={GreenTheme}>
-      <GlobalTheme />
-      <Hero />
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={GreenTheme}>
+        <GlobalTheme />
+        <Routes>
+          <Route>
+            <Route path="/" element={<Home />} />
+          </Route>
+        </Routes>
+      </ThemeProvider>
+    </Router>
+
   );
 }
 

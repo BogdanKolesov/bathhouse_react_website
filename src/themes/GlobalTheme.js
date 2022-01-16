@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
+import { COLOR_WHITE } from '../constants/colors';
 
 
 export const GlobalTheme = createGlobalStyle`
@@ -12,6 +12,9 @@ export const GlobalTheme = createGlobalStyle`
             text-decoration: none;
             cursor: pointer;
         }
+    a,p,span,h1,h2,h3,h4,h5{
+        color: ${COLOR_WHITE};
+    }
         li{
             list-style: none;
         }

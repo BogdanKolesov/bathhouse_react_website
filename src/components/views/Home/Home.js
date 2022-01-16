@@ -1,10 +1,11 @@
 import React from 'react';
+import Hero from '../../organismes/Hero'
 
 const Home = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <Hero />
+        </>
     );
 }
 
