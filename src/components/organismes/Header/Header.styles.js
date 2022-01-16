@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { COLOR_ORANGE } from '../../../constants/colors';
+import { COLOR_ORANGE, COLOR_WHITE } from '../../../constants/colors';
 import { Button } from '../../atoms';
 
 export const HeaderContainer = styled.header`
@@ -37,10 +37,29 @@ export const HeaderLinks = styled.div`
 `
 export const HeaderLink = styled.a`
     margin-right: 64px;
+    position: relative;
+        &:after{ 
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: transparent;
+        border-radius: 5px;
+        left: 0;
+        bottom: -3px;
+        transition: 0.15s linear;
+
+    }
+    &:hover{
+        &:after{
+            background-color: ${COLOR_WHITE};
+        }
+    }
         &:nth-last-child(1) {
             margin-right: 0;
         }
-
+    
 `
 
 export const HeaderInfo = styled.div`
