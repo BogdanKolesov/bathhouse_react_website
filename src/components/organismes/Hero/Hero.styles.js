@@ -36,6 +36,7 @@ export const HeroBackground = styled.img`
     object-fit: cover;
     width: 100%;
     height: 100%;
+    min-height: 690px;
     z-index: -1;
 `
 export const HeroText = styled.div`    

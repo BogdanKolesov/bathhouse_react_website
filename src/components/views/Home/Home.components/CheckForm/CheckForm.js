@@ -6,7 +6,7 @@ const Checkform = () => {
     return (
         <AppContainer>
             <CheckFormContainer>
-                <img src='/assets/images/home/bath1.png' alt='Баня' />
+                <img src='/assets/images/Home/bath1.png' alt='Баня' />
                 <CheckFormContent>
                     <h3>Узнать, свободна ли сауна</h3>
                     <input type='text' placeholder='Ваш телефон' />

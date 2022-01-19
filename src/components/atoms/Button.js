@@ -15,7 +15,8 @@ export const Button = styled.button`
     padding-right: 41px;
     border-radius: 5px;
     &:after{
-        content: url('/assets/icons/longArrow.svg');
+        ${({ white }) => white ? "content: url('/assets/icons/longArrowGreen.svg')" : "content: url('/assets/icons/longArrow.svg')"};
+        
         padding-left: 15px;
     }
     &:hover{
