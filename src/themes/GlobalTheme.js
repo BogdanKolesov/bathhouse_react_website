@@ -12,12 +12,15 @@ export const GlobalTheme = createGlobalStyle`
             text-decoration: none;
             cursor: pointer;
         }
-    a,p,span,h1,h2,h3,h4,h5{
+        a,p,span,h1,h2,h3,h4,h5,input{
+        /* font-size: 16px; */
         color: ${COLOR_WHITE};
-    }
+        }
+        h2{
+            font-size: 28px;
+        }
         li{
             list-style: none;
         }
     }
-
 `
