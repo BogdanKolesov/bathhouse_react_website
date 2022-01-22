@@ -19,7 +19,7 @@ export const HolesSlider = styled.div`
     display: flex;
     width: 100%;
     overflow-x: hidden;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 `
 
