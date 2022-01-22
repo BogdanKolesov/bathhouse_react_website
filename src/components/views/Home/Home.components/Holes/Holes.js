@@ -42,7 +42,6 @@ const Holes = () => {
                                             :
                                             (<></>)
                                     }
-
                                 </HoleImage>
                                 <HoleItemContent>
                                     <h4>
