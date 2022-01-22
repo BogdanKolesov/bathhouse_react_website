@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { COLOR_DARK, COLOR_GREEN, COLOR_ORANGE, COLOR_WHITE } from '../../../../../constants/colors';
 
+
 export const HolesContainer = styled.section`
     width: 100%;
     display: flex;
@@ -19,7 +20,7 @@ export const HolesSlider = styled.div`
     display: flex;
     width: 100%;
     overflow-x: hidden;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-between;
 `
 

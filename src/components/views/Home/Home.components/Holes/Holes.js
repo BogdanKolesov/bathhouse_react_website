@@ -1,19 +1,8 @@
 import React from 'react';
 import { holesData } from '../../../../../data/holesData';
 import { AppContainer, Button } from '../../../../atoms';
-import { Swiper, SwiperSlide } from "swiper/react";
-
 import { HoleImage, HoleItem, HoleItemContent, HoleItemText, HoleOffer, HolesContainer, HolesSlider, HolesTitles } from './Holes.styles';
-import "swiper/css";
-import "swiper/css/navigation"
 
-// import Swiper core and required modules
-import SwiperCore, {
-    Navigation
-} from 'swiper';
-
-// install Swiper modules
-SwiperCore.use([Navigation]);
 
 const Holes = () => {
 
@@ -29,7 +18,7 @@ const Holes = () => {
                         Смотреть все залы
                     </a>
                 </HolesTitles>
-                <HolesSlider className='mySwiper' navigation={true} slidesPerView={3} spaceBetween={30}>
+                <HolesSlider>
                     {
                         holesData.map((hole, index) => (
                             <HoleItem key={index}>
