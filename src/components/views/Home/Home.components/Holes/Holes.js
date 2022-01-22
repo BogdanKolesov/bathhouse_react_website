@@ -1,8 +1,7 @@
 import React from 'react';
-import Slider from "react-slick";
 import { holesData } from '../../../../../data/holesData';
 import { AppContainer, Button } from '../../../../atoms';
-import { HoleImage, HoleItem, HoleItemContent, HoleItemText, HoleOffer, HolesContainer, HolesTitles } from './Holes.styles';
+import { HoleImage, HoleItem, HoleItemContent, HoleItemText, HoleOffer, HolesContainer, HolesSlider, HolesTitles } from './Holes.styles';
 
 
 const Holes = () => {
@@ -27,7 +26,7 @@ const Holes = () => {
                         Смотреть все залы
                     </a>
                 </HolesTitles>
-                <Slider {...sliderSettings}>
+                <HolesSlider {...sliderSettings}>
                     {
                         holesData.map((hole, index) => (
                             <HoleItem key={index}>
@@ -74,7 +73,7 @@ const Holes = () => {
                             </HoleItem>
                         ))
                     }
-                </Slider>
+                </HolesSlider>
             </HolesContainer>
         </AppContainer>
     );
