@@ -4,15 +4,8 @@ import { AppContainer, Button } from '../../../../atoms';
 import { HoleImage, HoleItem, HoleItemContent, HoleItemText, HoleOffer, HolesContainer, HolesSlider, HolesTitles } from './Holes.styles';
 
 
-const Holes = () => {
 
-    const sliderSettings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3
-    }
+const Holes = () => {
 
 
     return (
@@ -26,7 +19,7 @@ const Holes = () => {
                         Смотреть все залы
                     </a>
                 </HolesTitles>
-                <HolesSlider {...sliderSettings}>
+                <HolesSlider>
                     {
                         holesData.map((hole, index) => (
                             <HoleItem key={index}>

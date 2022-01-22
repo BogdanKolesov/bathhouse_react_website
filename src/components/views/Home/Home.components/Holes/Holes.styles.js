@@ -1,9 +1,5 @@
 import styled from 'styled-components';
-import Slider from "react-slick";
 import { COLOR_DARK, COLOR_GREEN, COLOR_ORANGE, COLOR_WHITE } from '../../../../../constants/colors';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 
 export const HolesContainer = styled.section`
     width: 100%;
@@ -19,16 +15,12 @@ export const HolesTitles = styled.div`
         color: ${COLOR_DARK};
     }
 `
-export const HolesSlider = styled(Slider)`
+export const HolesSlider = styled.div`
     display: flex;
     width: 100%;
     overflow-x: hidden;
-    .slick-list {
-        overflow: visible;
-    }
-    li.slick-active button::before{
-        color: ${COLOR_GREEN};
-    }
+    flex-wrap: wrap;
+    justify-content: space-between;
 `
 
 export const HoleItem = styled.div`
@@ -47,6 +39,9 @@ export const HoleImage = styled.div`
     }
 `
 export const HoleOffer = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -72,5 +67,6 @@ export const HoleItemText = styled.p`
     color: ${COLOR_DARK};
     span{
         color: ${COLOR_GREEN};
+        margin-right: 2px;
     }
 `

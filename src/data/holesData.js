@@ -1,7 +1,7 @@
 export const holesData = [
     {
         image: '/assets/images/home/holes/hole1.png',
-        title: 'русская',
+        title: 'Русская баня',
         price: 'от 600 руб.',
         type: 'русская',
         persones: '3',
@@ -12,7 +12,7 @@ export const holesData = [
     },
     {
         image: '/assets/images/home/holes/hole2.png',
-        title: 'финская',
+        title: 'Финская сауна',
         price: 'от 600 руб.',
         type: 'русская',
         persones: '3',
@@ -23,7 +23,7 @@ export const holesData = [
     },
     {
         image: '/assets/images/home/holes/hole3.png',
-        title: 'хаммам',
+        title: 'Хаммам',
         price: 'от 600 руб.',
         type: 'русская',
         persones: '3',
@@ -34,7 +34,7 @@ export const holesData = [
     },
     {
         image: '/assets/images/home/holes/hole1.png',
-        title: 'русская',
+        title: 'Русская баня',
         price: 'от 600 руб.',
         type: 'русская',
         persones: '3',
@@ -45,7 +45,7 @@ export const holesData = [
     },
     {
         image: '/assets/images/home/holes/hole2.png',
-        title: 'финская',
+        title: 'Финская сауна',
         price: 'от 600 руб.',
         type: 'русская',
         persones: '3',
@@ -56,7 +56,7 @@ export const holesData = [
     },
     {
         image: '/assets/images/home/holes/hole3.png',
-        title: 'хаммам',
+        title: 'Хаммам',
         price: 'от 600 руб.',
         type: 'русская',
         persones: '3',
