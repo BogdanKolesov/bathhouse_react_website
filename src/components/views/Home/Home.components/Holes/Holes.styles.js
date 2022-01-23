@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { COLOR_DARK, COLOR_GREEN, COLOR_ORANGE, COLOR_WHITE } from '../../../../../constants/colors';
-
+import Slider from "react-slick";
 
 export const HolesContainer = styled.section`
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 `
 
 export const HolesTitles = styled.div`
@@ -16,11 +17,9 @@ export const HolesTitles = styled.div`
         color: ${COLOR_DARK};
     }
 `
-export const HolesSlider = styled.div`
+export const HolesSlider = styled(Slider)`
     display: flex;
-    width: 100%;
-    overflow-x: hidden;
-    flex-wrap: wrap;
+    width: 90%;
     justify-content: space-between;
 `
 
@@ -28,6 +27,7 @@ export const HoleItem = styled.div`
     width: 30%;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 `
 export const HoleImage = styled.div`
     width: 100%;
@@ -70,4 +70,25 @@ export const HoleItemText = styled.p`
         color: ${COLOR_GREEN};
         margin-right: 2px;
     }
+`
+export const NextArrow = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: ${COLOR_GREEN};
+    border-radius: 50%;
+    z-index: 2;
+    &:hover{
+        opacity: 0.5;
+    }
+    &:before{
+        content: url('/assets/icons/longArrow.svg');
+        margin-left: -15px;
+    }
+`
+
+export const PrevArrow = styled(NextArrow)`
+    rotate: 180deg;
 `
