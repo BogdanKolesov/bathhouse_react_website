@@ -5,6 +5,7 @@ import { ReviewsData } from '../../../data/reviewsData';
 import Actions from '../../organismes/Actions/Actions';
 import ConsultForm from '../../organismes/ConsultForm';
 import Hero from '../../organismes/Hero'
+import Map from '../../organismes/Map';
 import Previous from '../../organismes/Previous/Previous';
 import Reviews from '../../organismes/Reviews';
 import About from './Home.components/About';
@@ -22,6 +23,7 @@ const Home = () => {
             <Actions content={actionsData} />
             <ConsultForm />
             <Reviews content={ReviewsData} />
+            <Map />
         </>
     );
 }
