@@ -1,2 +1,2 @@
 import Actions from './Actions'
-export const Actions
+export default Actions
