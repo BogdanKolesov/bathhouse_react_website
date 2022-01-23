@@ -17,7 +17,7 @@ export const holesData = [
         type: 'русская',
         persones: '3',
         offer: {
-            title: 'Акция',
+            title: 'Спецпредложение',
             src: '/'
         }
     },
@@ -27,10 +27,6 @@ export const holesData = [
         price: 'от 600 руб.',
         type: 'русская',
         persones: '3',
-        offer: {
-            title: 'Акция',
-            src: '/'
-        }
     },
     {
         image: '/assets/images/home/holes/hole1.png',

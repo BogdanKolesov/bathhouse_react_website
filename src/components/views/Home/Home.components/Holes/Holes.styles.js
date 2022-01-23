@@ -37,8 +37,7 @@ export const HoleItem = styled.div`
     width: 30%;
     display: flex;
     flex-direction: column;
-    /* margin: 20px; */
-    border: 1px solid ${COLOR_GRAY};
+    border: 1px solid transparent;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
 `
