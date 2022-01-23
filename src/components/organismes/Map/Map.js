@@ -4,15 +4,18 @@ import { AppContainer, Button } from '../../atoms';
 import { MapContacts, MapContactsAdress, MapContactsPhone, MapContactsSocial, MapContactsTime, StyledMapContainer } from './Map.styles';
 
 const Map = () => {
-    const position = [59.921719, 30.348540]
+
+    const centerPosition = [59.921869, 30.346439]
+    const markerPosition = [59.921719, 30.348540]
+
     return (
         <AppContainer width='100%'>
-            <StyledMapContainer center={position} zoom={20} scrollWheelZoom={false}>
+            <StyledMapContainer center={centerPosition} zoom={20} scrollWheelZoom={false}>
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 />
-                <Marker position={position}>
+                <Marker position={markerPosition}>
                     <Popup>
                         Баня "Берёзка"
                     </Popup>

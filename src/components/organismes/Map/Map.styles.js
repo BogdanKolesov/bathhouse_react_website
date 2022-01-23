@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { MapContainer } from 'react-leaflet'
 import { COLOR_DARK, COLOR_WHITE } from '../../../constants/colors';
+import { Button } from '../../atoms';
 
 export const StyledMapContainer = styled(MapContainer)`
     margin-top: 80px;
@@ -20,9 +21,12 @@ export const MapContacts = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    ${Button}{
+        width: 80%;
+    }
 `
 export const MapContactsAdress = styled.p`
-    width: 60%;
+    width: 80%;
     div{
         display: flex;
         img{
