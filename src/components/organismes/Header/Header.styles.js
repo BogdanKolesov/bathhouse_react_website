@@ -85,7 +85,7 @@ export const HeaderHamburger = styled.div`
 `
 
 export const HeaderHamburgerLines = styled.div`
-    height: 2px;
+    height: 2.5px;
     width: 20px;
     position: relative;
     background-color: ${COLOR_WHITE};
@@ -93,7 +93,7 @@ export const HeaderHamburgerLines = styled.div`
     transition: 0.15s linear;   
     &:before{
         content: '';
-        height: 2px;
+        height: 2.5px;
         width: ${({ activeMobile }) => activeMobile ? '25px' : '15px'};
         position: absolute;
         top: -6px;
@@ -104,7 +104,7 @@ export const HeaderHamburgerLines = styled.div`
     }
     &:after{
         content: '';
-        height: 2px;
+        height: 2.5px;
         width: ${({ activeMobile }) => activeMobile ? '15px' : '25px'};
         position: absolute;
         bottom: -6px;
@@ -128,5 +128,6 @@ export const HeaderMobileMenu = styled.div`
     right: 0;
     transition: 0.15s ease-in-out;
     opacity: ${({ activeMobile }) => activeMobile ? '1' : '0'};
-    z-index: ${({ activeMobile }) => activeMobile ? '3' : '-999'};
+    z-index: ${({ activeMobile }) => activeMobile ? '3' : '-1'};
+    left: ${({ activeMobile }) => activeMobile ? '0' : '-100vw'};
 `
