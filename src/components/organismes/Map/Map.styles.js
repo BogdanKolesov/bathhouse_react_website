@@ -35,6 +35,10 @@ export const MapContactsAdress = styled.p`
         p{
             color: ${COLOR_DARK};
             font-size: 20px;
+            span{
+                color: ${COLOR_DARK};
+                font-weight: 600;
+            }
         }
 
     }

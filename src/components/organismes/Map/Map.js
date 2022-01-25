@@ -25,20 +25,20 @@ const Map = () => {
                     <MapContactsAdress>
                         <div>
                             <img src='/assets/icons/mapPoint.svg' alt='' />
-                            <p>Наш адрес: город Архангельск,
+                            <p><span>Наш адрес:</span> город Архангельск,
                                 СНТ Транспортник, стр.11</p>
                         </div>
                     </MapContactsAdress>
                     <MapContactsPhone>
                         <div>
                             <img src='/assets/icons/phone.svg' alt='' />
-                            <p>Телефон: +7 (911) 554-33-44</p>
+                            <p><span>Телефон:</span> +7 (911) 554-33-44</p>
                         </div>
                     </MapContactsPhone>
                     <MapContactsTime>
                         <div>
                             <img src='/assets/icons/clock.svg' alt='' />
-                            <p>График работы: круглосуточно</p>
+                            <p><span>График работы:</span> круглосуточно</p>
                         </div>
                     </MapContactsTime>
                     <MapContactsSocial>
