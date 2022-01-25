@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { AppContainer } from '../../atoms'
 import { headerData } from '../../../data/headerData'
-import { HeaderContainer, HeaderInfo, HeaderLink, HeaderLinks, HeaderLogo, HeaderPhone, HeaderButton } from './Header.styles';
+import { HeaderContainer, HeaderInfo, HeaderLink, HeaderLinks, HeaderLogo, HeaderPhone, HeaderButton, HeaderHamburger, HeaderHamburgerLines } from './Header.styles';
 import { ICON_LOGO } from '../../../constants/icons';
 
 const Header = () => {
+    const [activeMobile, setActiveMobile] = useState(false);
+
     return (
         <AppContainer>
             <HeaderContainer>
@@ -15,6 +17,9 @@ const Header = () => {
                         <span>в Санкт-Петербурге</span>
                     </p>
                 </HeaderLogo>
+                <HeaderHamburger activeMobile={activeMobile} onClick={() => setActiveMobile(!activeMobile)}>
+                    <HeaderHamburgerLines activeMobile={activeMobile} />
+                </HeaderHamburger>
                 <HeaderLinks>
                     {
                         headerData.map((data, index) => (

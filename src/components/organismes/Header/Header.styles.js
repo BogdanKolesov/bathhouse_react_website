@@ -75,3 +75,42 @@ export const HeaderButton = styled(Button)`
     background-color: ${COLOR_ORANGE};
     border-color: ${COLOR_ORANGE};
 `
+export const HeaderHamburger = styled.div`
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+export const HeaderHamburgerLines = styled.div`
+    height: 2px;
+    width: 20px;
+    position: relative;
+    background-color: ${COLOR_WHITE};
+    border-radius: 3px;
+    transition: 0.15s linear;   
+    &:before{
+        content: '';
+        height: 2px;
+        width: ${({ activeMobile }) => activeMobile ? '25px' : '15px'};
+        position: absolute;
+        top: -6px;
+        right: 0;
+        background-color: ${COLOR_WHITE};
+        border-radius: 3px;
+        transition: 0.15s linear;
+    }
+    &:after{
+        content: '';
+        height: 2px;
+        width: ${({ activeMobile }) => activeMobile ? '15px' : '25px'};
+        position: absolute;
+        bottom: -6px;
+        right: 0;
+        background-color: ${COLOR_WHITE};
+        border-radius: 3px;
+        transition: 0.15s linear;
+    }
+`
