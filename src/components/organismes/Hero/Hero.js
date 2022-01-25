@@ -19,7 +19,7 @@ const Hero = () => {
                         </h1>
                         <HeroSubtitle>
                             <img src={ICON_MAPPOINT} alt='' />
-                            г. Санкт-Петербург, ул.Боровая, д.8
+                            г.Санкт-Петербург, ул.Боровая, д.8
                         </HeroSubtitle>
                         <HeroTime>Работаем <b>круглосуточно</b></HeroTime>
                         <HeroPrice>Цены <b>от 1100 рублей</b></HeroPrice>

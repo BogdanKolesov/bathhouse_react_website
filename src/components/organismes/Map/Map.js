@@ -25,14 +25,13 @@ const Map = () => {
                     <MapContactsAdress>
                         <div>
                             <img src='/assets/icons/mapPoint.svg' alt='' />
-                            <p><span>Наш адрес:</span> город Архангельск,
-                                СНТ Транспортник, стр.11</p>
+                            <p><span>Наш адрес:</span> г.Санкт-Петербург, ул.Боровая, д.8</p>
                         </div>
                     </MapContactsAdress>
                     <MapContactsPhone>
                         <div>
                             <img src='/assets/icons/phone.svg' alt='' />
-                            <p><span>Телефон:</span> +7 (911) 554-33-44</p>
+                            <p><span>Телефон:</span> +7 (999) 333-22-11</p>
                         </div>
                     </MapContactsPhone>
                     <MapContactsTime>

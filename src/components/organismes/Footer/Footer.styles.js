@@ -3,10 +3,10 @@ import { COLOR_GREEN } from '../../../constants/colors';
 import { AppContainer } from '../../atoms'
 
 export const FooterContainer = styled(AppContainer)`
-    height: 118px;
+    height: 80px;
     background-color: ${COLOR_GREEN};
 `
-export const FooterContent = styled.div`
+export const FooterContent = styled.footer`
     width: 100%;
     height: 100%;
     display: flex;
