@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AppContainer } from '../../atoms'
 import { headerData } from '../../../data/headerData'
-import { HeaderContainer, HeaderInfo, HeaderLink, HeaderLinks, HeaderLogo, HeaderPhone, HeaderButton, HeaderHamburger, HeaderHamburgerLines } from './Header.styles';
+import { HeaderContainer, HeaderInfo, HeaderLink, HeaderLinks, HeaderLogo, HeaderPhone, HeaderButton, HeaderHamburger, HeaderHamburgerLines, HeaderMobileMenu } from './Header.styles';
 import { ICON_LOGO } from '../../../constants/icons';
 
 const Header = () => {
@@ -19,6 +19,7 @@ const Header = () => {
                 </HeaderLogo>
                 <HeaderHamburger activeMobile={activeMobile} onClick={() => setActiveMobile(!activeMobile)}>
                     <HeaderHamburgerLines activeMobile={activeMobile} />
+
                 </HeaderHamburger>
                 <HeaderLinks>
                     {
@@ -37,6 +38,9 @@ const Header = () => {
                         Забронировать
                     </HeaderButton>
                 </HeaderInfo>
+                <HeaderMobileMenu activeMobile={activeMobile} >
+
+                </HeaderMobileMenu>
             </HeaderContainer>
         </AppContainer>
 

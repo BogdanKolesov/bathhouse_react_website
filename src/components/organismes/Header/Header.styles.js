@@ -114,3 +114,19 @@ export const HeaderHamburgerLines = styled.div`
         transition: 0.15s linear;
     }
 `
+
+export const HeaderMobileMenu = styled.div`
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: ${COLOR_WHITE};
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.15s ease-in-out;
+    opacity: ${({ activeMobile }) => activeMobile ? '1' : '0'};
+    z-index: ${({ activeMobile }) => activeMobile ? '3' : '-999'};
+`
