@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { TileLayer, Marker, Popup } from 'react-leaflet'
-import { AppContainer, Button } from '../../atoms';
+import { socialIcons } from '../../../data/socialIcons';
+import { AppContainer, Button, SocialIcon } from '../../atoms';
 import { MapContacts, MapContactsAdress, MapContactsPhone, MapContactsSocial, MapContactsTime, StyledMapContainer } from './Map.styles';
 
 const Map = () => {
@@ -41,7 +42,13 @@ const Map = () => {
                         </div>
                     </MapContactsTime>
                     <MapContactsSocial>
-
+                        {
+                            socialIcons.map((icon, index) => (
+                                <SocialIcon key={index} href={icon.link}>
+                                    <img src={icon.social} alt={icon.alt} />
+                                </SocialIcon>
+                            ))
+                        }
                     </MapContactsSocial>
                     <Button>
                         Зказать обратный звонок

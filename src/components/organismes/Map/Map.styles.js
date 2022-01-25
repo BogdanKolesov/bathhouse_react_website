@@ -48,5 +48,8 @@ export const MapContactsTime = styled(MapContactsAdress)`
 `
 
 export const MapContactsSocial = styled.div`
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
 `
