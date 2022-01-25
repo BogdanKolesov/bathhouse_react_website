@@ -4,6 +4,7 @@ import { previousData } from '../../../data/previousData';
 import { ReviewsData } from '../../../data/reviewsData';
 import Actions from '../../organismes/Actions/Actions';
 import ConsultForm from '../../organismes/ConsultForm';
+import Footer from '../../organismes/Footer/Footer';
 import Hero from '../../organismes/Hero'
 import Map from '../../organismes/Map';
 import Previous from '../../organismes/Previous/Previous';
@@ -24,6 +25,7 @@ const Home = () => {
             <ConsultForm />
             <Reviews content={ReviewsData} />
             <Map />
+            <Footer />
         </>
     );
 }

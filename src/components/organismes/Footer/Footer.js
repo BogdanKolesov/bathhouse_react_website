@@ -1,10 +1,15 @@
 import React from 'react';
+import { FooterContainer, FooterContent } from './Footer.styles';
 
 const Footer = () => {
     return (
-        <div>
-
-        </div>
+        <FooterContainer width='100%'>
+            <FooterContent>
+                <p>
+                    Сайт разработан по макету, найденному в интернете || <a href='https://www.kolesov.dev/'>kolesov.dev</a>
+                </p>
+            </FooterContent>
+        </FooterContainer>
     );
 }
 
