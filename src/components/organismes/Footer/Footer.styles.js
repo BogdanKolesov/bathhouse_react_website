@@ -6,6 +6,7 @@ export const FooterContainer = styled(AppContainer)`
     height: 80px;
     background-color: ${COLOR_GREEN};
 `
+//fix
 export const FooterContent = styled.footer`
     width: 100%;
     height: 100%;
