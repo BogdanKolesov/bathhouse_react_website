@@ -7,7 +7,13 @@ export const CheckFormContainer = styled.div`
     background-color: ${COLOR_GREEN};
     img{
         width: 50%;
+        @media(max-width: 1200px){
+            display: none;
+        }
     }
+    @media(max-width: 1200px){
+            /* margin-top: 50px; */
+        }
 `
 
 export const CheckFormContent = styled.form`
@@ -31,6 +37,14 @@ export const CheckFormContent = styled.form`
             color: ${COLOR_WHITE};
         }
     }
+    @media(max-width: 1200px){
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            /* background-color: ${COLOR_WHITE}; */
+        }
 `
 
 export const CheckboxForm = styled.div`
