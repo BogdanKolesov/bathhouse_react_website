@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { COLOR_GREEN, COLOR_WHITE } from '../../../../../constants/colors';
+import { COLOR_GRAY, COLOR_GREEN, COLOR_LITEGRAY, COLOR_WHITE } from '../../../../../constants/colors';
 
 export const CheckFormContainer = styled.div`
     display: flex;
@@ -12,7 +12,8 @@ export const CheckFormContainer = styled.div`
         }
     }
     @media(max-width: 1200px){
-            /* margin-top: 50px; */
+            margin-top: 50px;
+            align-items: center;
         }
 `
 
@@ -34,7 +35,11 @@ export const CheckFormContent = styled.form`
         padding-top: 10px;
         padding-bottom: 10px;
         &::placeholder{
-            color: ${COLOR_WHITE};
+            color: ${COLOR_LITEGRAY};
+        }
+        @media(max-width: 1200px){
+            width: 95%;
+            margin-top: 20px;
         }
     }
     @media(max-width: 1200px){
@@ -43,8 +48,17 @@ export const CheckFormContent = styled.form`
             padding-bottom: 20px;
             padding-left: 15px;
             padding-right: 15px;
-            /* background-color: ${COLOR_WHITE}; */
+            align-items: center;
+            background-color: ${COLOR_WHITE};
+            h3{ 
+                color: ${COLOR_GREEN};
+            }
+            input{
+                color: ${COLOR_GRAY};
+                border-color: ${COLOR_GRAY};
+            }
         }
+    
 `
 
 export const CheckboxForm = styled.div`
@@ -53,6 +67,8 @@ export const CheckboxForm = styled.div`
 
     input{
         margin-right: 10px;
+        width: 30px;
+        height: 30px;
     }
     
     span{
@@ -63,5 +79,14 @@ export const CheckboxForm = styled.div`
             text-decoration: underline;
         }
     }
-
+    @media(max-width: 1200px){
+        margin-top: 30px;
+        margin-bottom: 30px;
+        span{
+            color: ${COLOR_GRAY};
+            a{
+                color: ${COLOR_GRAY};
+            }
+        }
+    }
 `
