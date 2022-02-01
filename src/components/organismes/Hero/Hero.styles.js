@@ -44,6 +44,9 @@ export const HeroText = styled.div`
         font-size: 70px;
         display: flex;
         flex-direction: column;
+        @media(max-width: 1200px){
+            font-size: 28px;
+        }
     }
     p{
         font-size: 22px;
