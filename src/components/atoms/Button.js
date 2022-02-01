@@ -14,6 +14,12 @@ export const Button = styled.button`
     padding-left: 40px;
     padding-right: 41px;
     border-radius: 5px;
+    @media(max-width: 1200px){
+        background-color: ${({ whiteMobile }) => whiteMobile ? COLOR_WHITE : COLOR_GREEN};
+        color: ${({ whiteMobile }) => whiteMobile ? COLOR_GREEN : COLOR_WHITE};
+        width: ${({ widthMobile }) => widthMobile ? widthMobile : 'auto'};
+
+    }
     &:after{
         ${({ white }) => white ? "content: url('/assets/icons/longArrowGreen.svg')" : "content: url('/assets/icons/longArrow.svg')"};
         

@@ -19,7 +19,7 @@ const Checkform = () => {
                             в соответствии с <a href='/'>пользовательским соглашением</a>
                         </span>
                     </CheckboxForm>
-                    <Button white>Проверить</Button>
+                    <Button white widthMobile='100%'>Проверить</Button>
                 </CheckFormContent>
             </CheckFormContainer>
         </AppContainer>

@@ -50,6 +50,7 @@ export const CheckFormContent = styled.form`
             padding-right: 15px;
             align-items: center;
             background-color: ${COLOR_WHITE};
+            
             h3{ 
                 color: ${COLOR_GREEN};
             }
@@ -64,13 +65,13 @@ export const CheckFormContent = styled.form`
 export const CheckboxForm = styled.div`
     display: flex;
     width: 100%;
-
+    justify-content: center;
+    align-items: center;
     input{
         margin-right: 10px;
         width: 30px;
         height: 30px;
     }
-    
     span{
         font-size: 14px;
         a{
