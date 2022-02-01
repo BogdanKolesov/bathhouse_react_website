@@ -36,6 +36,9 @@ export const HeaderLogo = styled.div`
 `
 export const HeaderLinks = styled.div`
     display: flex;
+    @media(max-width: 1200px){
+        display: none;
+    }
 `
 export const HeaderLink = styled.a`
     margin-right: 64px;
@@ -74,6 +77,9 @@ export const HeaderPhone = styled.div`
 export const HeaderButton = styled(Button)`
     background-color: ${COLOR_ORANGE};
     border-color: ${COLOR_ORANGE};
+    @media(max-width: 1200px){
+        display: none;
+    }
 `
 export const HeaderHamburger = styled.div`
     width: 25px;
