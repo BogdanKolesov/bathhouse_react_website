@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { COLOR_GREEN } from '../../../constants/colors';
-import { AppContainer } from '../../atoms';
+import { AppContainer, TextInput } from '../../atoms';
+import CheckGroup from '../../molecules/CheckGroup';
 
 const containerHeight = 260;
 
@@ -12,26 +13,37 @@ export const ConsultFormContainer = styled.section`
     margin-top: 200px;
     ${AppContainer}{
         display: flex;
-        /* justify-content: space-between; */
-        /* align-items: center; */
+        justify-content: space-between; 
+        align-items: center;
+        height: 100%;
     }
     img{
-        position: absolute;
-        bottom: 0;
-        width: 20%;
+        height: 100%;
+        margin-right: 50px;
     }
 `
 
 export const ConsultFormContent = styled.div`
     display: flex;
     flex-direction: column;
-    width: 70%;
-    height: 100%;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    form{
+        ${TextInput}{
+            margin-right: 50px;
+            width: 40%;
+        }
+        ${CheckGroup}{
+            margin-top: 30px;
+            width: 50%;
+        }
+    }
 `
 export const ConsultFormTitle = styled.h4`
-
+    margin-bottom: 5px;
 `
 
 export const ConsultFormDescription = styled.p`
-
+    margin-bottom: 30px;
 `
